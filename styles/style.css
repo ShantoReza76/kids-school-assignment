@@ -1,0 +1,85 @@
+*{
+    margin: 0 auto;
+} 
+.quicksand-normal {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* nav bar */
+nav{
+    display: flex;
+    width: 1366px;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    
+}
+nav ul li{
+    margin-right:32px ;
+}
+.nav-title{
+    display: flex;
+    align-items: center;
+}
+.nav-btn{
+    width: 197px;
+    height: 50px;
+    border: none;
+    border-radius: 12px;
+    background: rgb(254, 163, 1);
+    color: rgb(255, 255, 255);
+}
+.n-h{
+    color: rgb(254, 163, 1);
+}
+.n-a{
+    color: rgb(1, 172, 253);
+}
+.n-f{
+    color: rgb(5, 212, 223);
+}
+.n-A{
+    color: rgb(93, 88, 239);
+}
+/* banner section */
+.banner{
+    width: 1155px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sec-des{
+    margin-right: 50px;
+}
+.sec-des h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 61px;
+    margin-bottom: 24px;
+}
+.spn-h1{
+    color:rgb(254, 163, 1) ;
+}
+.spn-h2{
+    color: rgb(1, 172, 253);
+}
+.banner-btn{
+    width: 197px;
+    height: 50px;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    background: rgb(17, 17, 17);
+    margin-top: 24px;
+}
+@media screen and (min-width:576px) {
+    nav{
+        
+    }
+}
