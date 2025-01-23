@@ -30,8 +30,10 @@ nav li a{
     display: flex;
     align-items: center;
 }
-
 .menu{
+    display: none;
+}
+.mrquee{
     display: none;
 }
 .nav-btn{
@@ -91,6 +93,9 @@ nav li a{
     nav{
         width: 100%;
         margin-bottom: 250px;
+        box-sizing: border-box;
+       
+        border: 2px solid rgb(254, 163, 1);
     }
     nav ul ,.nav-btn {
         display: none;
@@ -102,7 +107,10 @@ nav li a{
         width: 62px;
         height: 62px;
     }
-
+    .mrquee{
+        display: contents;
+        margin-bottom: 100px;
+    }
     .banner img{
         width: 100%;
     }
@@ -352,4 +360,5 @@ footer div{
         display: flex;
         flex-direction: column;
     }
+    
 }
