@@ -30,6 +30,10 @@ nav li a{
     display: flex;
     align-items: center;
 }
+
+.menu{
+    display: none;
+}
 .nav-btn{
     width: 197px;
     height: 50px;
@@ -84,14 +88,21 @@ nav li a{
 }
 /* banner section responsive */
 @media screen and (max-width: 576px) {
-    *{margin: 0 auto;}
-    
     nav{
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 200px;
+        margin-bottom: 250px;
     }
+    nav ul ,.nav-btn {
+        display: none;
+    }
+    .menu {
+        display: contents;
+    }
+    .menu img{ 
+        width: 62px;
+        height: 62px;
+    }
+
     .banner img{
         width: 100%;
     }
@@ -107,9 +118,7 @@ nav li a{
 
 #standard-curriculam-section{
     background-image: url("../assets/bg.png");
-    width: 1180px;
-    height: 500px;
-    padding: 20px;
+    padding: 40px;
     margin-top: 100px;
     margin-bottom: 20px;
     justify-items: center;
@@ -120,7 +129,7 @@ nav li a{
     font-size: 2rem;
     margin-bottom: 20px;
 }
-.curriculam-container{
+.curriculum-container{
     display: flex;
     justify-content:space-around;
 }
@@ -155,8 +164,7 @@ nav li a{
     width: 60px;
     height: 60px;
     font-size: larger;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
     color: white;
     border: none;
     border-radius: 30px;
@@ -174,18 +182,37 @@ nav li a{
 .sc-3{
     color:rgb(135, 0, 255) ;
 }
+/* curriculam responsive */
 
+@media screen and (max-width:576px) {
+    
+    #standard-curriculam-section{
+        margin-top: 250px;
+        text-align: start;
+    } 
+
+     .curriculum-container{
+        display:flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+        .btn{
+        display: none;
+    }
+    
+}
 /*Our Stories section  */
 
 #our-stories{
-    width: 1180px;
-    height: 800px;
+    
+    padding-top: 60px;
+    padding-bottom: 60px;
     align-items: center;
     text-align: center;
-    gap: 10px;
     background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
     
 }
+
 #our-stories img{
     width: 100%;
     border-radius: 16px 16px 0px 0px;
@@ -193,13 +220,13 @@ nav li a{
 .st{
     width: 467px;
     font-size: 2rem;
-    margin-bottom: 20px;
-    margin-top: 20px; 
+    margin-bottom: 40px;
+    
 }
 .sb{
     width: 197px;
     height: 50px;
-    margin-top: 40px;
+    margin-top: 60px;
     color: white;
     border-radius: 12px;
     background: rgb(17, 17, 17);
@@ -274,22 +301,55 @@ nav li a{
     border-radius: 47.93px;
     background: rgb(93, 88, 240);
 }
+
+/* stories section responsive */
+@media screen and (max-width: 576px) {
+    
+    .story-2,.story-3,.story-4,.story-5{
+        width: 100%;
+    }
+
+    .p-2,.p-3,.p-4,.p-5{
+        width: 60%;
+    }
+    .stories{
+        display:grid;
+        grid-template-columns: (2,1fr);
+        gap: 10px;
+       
+    }
+    .story-1{
+        display: none;
+    }
+}
+
 /* footer section */
 
 footer{
-    width: 1180px;
-    height: 400px;
-    
+    display: flex;
+    flex-direction: ;
+    padding: 50px;
     background-color:rgb(1, 172, 253) ;
-    justify-content: center;
+    justify-content: space-around;
+    justify-items:center;
 }
 
 footer div{
     display: flex;
-    
+    padding: 30px;
     text-align: center;
+    color: white;
 }
+
 .fd{
     display: flex;
     flex-direction: column;
+}   
+
+/* footer responsive */
+@media screen and (max-width:576px) {
+    footer div {
+        display: flex;
+        flex-direction: column;
+    }
 }
